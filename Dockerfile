@@ -1,9 +1,6 @@
 FROM grrrnl/garp3-httpd:3.9
 MAINTAINER David Spreekmeester <david@grrr.nl>
 
-ADD docker/php.ini /usr/local/etc/php/
-ADD docker/httpd.conf /etc/apache2/apache2.conf
-
 WORKDIR /var/www/html
 
 RUN \
