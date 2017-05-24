@@ -1,8 +1,6 @@
 FROM grrrnl/garp3-httpd:3.9
 MAINTAINER David Spreekmeester <david@grrr.nl>
 
-WORKDIR /var/www/html
-
 RUN \
     # Install Fish shell for Debian 8.x
     apt-key adv --keyserver keyserver.ubuntu.com --recv-key D880C8E4 && \
@@ -12,7 +10,7 @@ RUN \
     apt -y install fish && \
 
     # Basics
-    apt -y install wget git vim && \
+    apt -y install git vim && \
 
     # LibSSH2 and SSH client, for content syncing
     apt -y install libssh2-1 libssh2-1-dev openssh-client && \
