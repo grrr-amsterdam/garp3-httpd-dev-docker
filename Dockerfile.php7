@@ -12,11 +12,6 @@ RUN \
     # Basics
     apt -y install git vim && \
 
-    # LibSSH2 and SSH client, for content syncing
-    apt -y install libssh2-1 libssh2-1-dev openssh-client && \
-    yes | pecl install ssh2 && \
-    docker-php-ext-enable ssh2 && \
-
     # Install general MySQL client for easy access to db container
     apt -y install mysql-client && \
 
