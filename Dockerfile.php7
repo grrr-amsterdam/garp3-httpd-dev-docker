@@ -19,6 +19,10 @@ RUN \
     wget -qO- https://deb.nodesource.com/setup_6.x | bash - && \
     apt -y install nodejs && \
 
+    # Install zlib and zip php extension
+    apt -y install zlib1g-dev && \
+    docker-php-ext-install zip && \
+
     # Install ruby gems
     apt -y install ruby rubygems-integration && \
     gem install scss-lint && \
