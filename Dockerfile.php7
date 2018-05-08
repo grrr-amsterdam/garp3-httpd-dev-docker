@@ -26,6 +26,7 @@ RUN \
     npm i -g gulp && \
     npm i -g bower && \
     npm i -g jshint && \
+    npm i -g yarn && \
     # --- Deploy tools
     gem install net-ssh -v 2.9.2 && \
     gem install capistrano && \
